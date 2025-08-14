@@ -13,7 +13,7 @@ export  const Navbar = () => {
         My Portfolio
         </a>
         <div className={styles.menu}>
-            <img className={styles.menuBtn} src={getImageUrl("nav/menuIcon.png")}/>
+            <img className={styles.menuBtn} src={getImageUrl("nav/close_menu.png")} alt="menu-button"/>
         <ul className={styles.menuItems}>
             <li>
                 <a href="#about">About</a>
