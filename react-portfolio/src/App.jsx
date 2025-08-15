@@ -1,6 +1,6 @@
 import styles from'./App.module.css'
 import { Navbar } from './components/Navbar/Navbar'
-import { ProfileHeading } from './components/Navbar/ProfileHeading/ProfileHeading'
+import { ProfileHeading } from './components/ProfileHeading/ProfileHeading'
 
 function App() {
   

@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from './ProfileHeading.module.css'
 
-import { getImageUrl } from "../../../utils";
+import { getImageUrl } from "../../utils";
 
 export const ProfileHeading = () => {
     return (
