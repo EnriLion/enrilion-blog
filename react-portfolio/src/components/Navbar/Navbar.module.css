@@ -32,6 +32,9 @@
     color: var(--color-text);
     text-decoration: none;
 }
+.menuBtn{
+    display: none;
+}
 
 
 @media screen  and (max-width:830px){
@@ -51,7 +54,7 @@
     }
 
     .menuBtn{
-        height: 2rem;
+        height: 50px;
         width: auto;
         display: block;
         cursor: pointer;

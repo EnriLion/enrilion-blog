@@ -7,8 +7,8 @@
     --color-bg: #04152d;
 
     /* Fonts */
-    --font-robot: 'Roboto', sans-serif;
-    font-family:  var(--font-robot);
+    --font-roboto: 'Roboto', sans-serif;
+    font-family:  var(--font-roboto);
 }
 
 /* * {
