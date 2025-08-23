@@ -4,7 +4,7 @@
     position: relative;
     background-color: rgba(12, 12, 12, 0.6);
     border-radius: 15px;
-    padding: 73px;
+    padding: 34px;
     margin-top: 129px;
     z-index: 1;
     margin-left: 10%;
@@ -31,15 +31,15 @@
     margin-right: 10px;
 } */
 
-.aboutItem img {
+.aboutItem  img {
     width: 35px;
     height: auto;
-    margin-right: 10px;
+    margin: 15px;
 }
 
 .aboutImage {
     height: auto;
-    width: 200px;
+    width: 451px;
 }
 
 .about {
@@ -75,9 +75,15 @@
     font-weight: 600;
 }
 
-.aboutImage p {
-    font-size: 25px;
+.aboutItem p {
+    font-size: 20px;
 }
+
+.aboutImage p {
+    font-size: 45px;
+}
+
+
 
 @media screen  and (max-width: 830px){
     .container {
