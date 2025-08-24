@@ -1,0 +1,38 @@
+[
+    {
+        "title": "HTML",
+        "imageSrc": "skills/html.png"
+    },
+    {
+        "title": "CSS",
+        "imageSrc": "skills/css.png"
+    },
+    {
+        "title": "React",
+        "imageSrc": "skills/react.png"
+    },
+    {
+        "title": "Spring Boot",
+        "imageSrc": "skills/spring.png"
+    },
+    {
+        "title": "SQL",
+        "imageSrc": "skills/sql.png"
+    },
+    {
+        "title": "MongoDB",
+        "imageSrc": "skills/mongo.png"
+    },
+    {
+        "title": "Message Brokers",
+        "imageSrc": "skills/kafka.png"
+    },
+    {
+        "title": "Cloud",
+        "imageSrc": "skills/aws.png"
+    },
+    {
+        "title": "Figma",
+        "imageSrc": "skills/figma.png"
+    }
+]
