@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar/Navbar'
 import { ProfileHeading } from './components/ProfileHeading/ProfileHeading'
 import { About } from './components/About/About'
 import { Experience } from './components/Experience/Experience'
+import { Projects } from './components/Projects/Projects'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
     <ProfileHeading/>
     <About/>
     <Experience/>
+    <Projects />
     </div>
   )
 }
