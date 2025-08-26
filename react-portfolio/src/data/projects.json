@@ -1,0 +1,26 @@
+[
+    {
+        "title": "CMS - Vendor",
+        "imageSrc": "projects/project.png",
+        "description": "A project made for a vendor with the management and control of videos and images",
+        "skills": ["Spring Boot", "React", "SQL"],
+        "demo": "https://www.google.com",
+        "source": "https://www.google.com"
+    },
+    {
+        "title": "Check-in(Microservice)",
+        "imageSrc": "projects/project.png",
+        "description": "A project made for the cloud who follows microservice architecture",
+        "skills": ["Spring Boot", "SQL", "Cloud"],
+        "demo": "https://www.google.com",
+        "source": "https://www.google.com"
+    },
+    {
+        "title": "Application-Vendor",
+        "imageSrc": "projects/project.png",
+        "description": "Modern application for a vendor with the latest technologies",
+        "skills": ["React", "Express", "Node"],
+        "demo": "https://www.google.com",
+        "source": "https://www.google.com"
+    }
+]
