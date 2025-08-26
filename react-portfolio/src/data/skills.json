@@ -1,38 +1,38 @@
 [
     {
         "title": "HTML",
-        "imageSrc": "skills/html.png"
+        "imageSrc": "skills/html.svg"
     },
     {
         "title": "CSS",
-        "imageSrc": "skills/css.png"
+        "imageSrc": "skills/css.svg"
     },
     {
         "title": "React",
-        "imageSrc": "skills/react.png"
+        "imageSrc": "skills/react.svg"
     },
     {
         "title": "Spring Boot",
-        "imageSrc": "skills/spring.png"
+        "imageSrc": "skills/spring.svg"
     },
     {
         "title": "SQL",
-        "imageSrc": "skills/sql.png"
+        "imageSrc": "skills/sql.svg"
     },
     {
         "title": "MongoDB",
-        "imageSrc": "skills/mongo.png"
+        "imageSrc": "skills/mongo.svg"
     },
     {
         "title": "M-Brokers",
-        "imageSrc": "skills/kafka.png"
+        "imageSrc": "skills/kafka.svg"
     },
     {
         "title": "Cloud",
-        "imageSrc": "skills/aws.png"
+        "imageSrc": "skills/aws.svg"
     },
     {
         "title": "Figma",
-        "imageSrc": "skills/figma.png"
+        "imageSrc": "skills/figma.svg"
     }
 ]
