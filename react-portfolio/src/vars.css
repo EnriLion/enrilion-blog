@@ -5,12 +5,9 @@
     --color-secondary: #19376d;
     --color-dark: #0b2447;
     --color-bg: #04152d;
+    background-color: white;
 
     /* Fonts */
-    --font-roboto: 'Roboto', sans-serif;
-    font-family:  var(--font-roboto);
+    --font-robot: 'Roboto', sans-serif;
+    font-family:  var(--font-robot);
 }
-
-/* * {
-    font-family: var(--font-robot);
-} */
