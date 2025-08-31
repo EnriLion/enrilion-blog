@@ -2,7 +2,7 @@
     {
         "title": "CMS - Vendor",
         "imageSrc": "projects/cms.png",
-        "description": "A project made for a vendor with the management and control of videos and images",
+        "description": "A project made for a vendor with management of videos and images",
         "skills": ["Spring Boot", "React", "SQL"],
         "demo": "https://www.google.com",
         "source": "https://www.google.com"
