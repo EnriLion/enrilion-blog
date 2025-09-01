@@ -9,4 +9,9 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
   },
+  // server: {
+  //   allowedHosts: [
+  //     'promoting-wellness-crown-phi.trycloudflare.com'
+  //   ]
+  // }
 });
