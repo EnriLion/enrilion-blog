@@ -107,6 +107,9 @@
     align-items: center;
     gap: 34px;
    } 
+   .historyItemDetails ul {
+    list-style-position: outside;
+    }
 
    .skills {
     width: 100%;
