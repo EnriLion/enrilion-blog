@@ -9,7 +9,7 @@ export const ProfileHeading = () => {
     <section className={styles.container}>
         <div className={styles.content}>
             <h1 className={styles.title}>Hi, I'm Diego Leon</h1>
-            <p className={styles.description}>I'm a Jr Developer with +1 year of 
+            <p className={styles.description}>I'm a  Softwarer Developer with 
                 experience using Java Spring Boot and 
                 more. Contact me if you are interested!
             </p>
