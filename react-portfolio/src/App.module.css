@@ -7,23 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    overflow: hidden;
 }
 
-.App * {
-    box-sizing: inherit; 
-}
-
-@media screen and (max-width: 830px) {
-    .App {
-        padding: 800px;
-        overflow-x: hidden;
-        height: auto; 
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .App {
-        overflow-x: hidden;
-        padding: 10px; 
-    }
-}
