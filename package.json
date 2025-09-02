@@ -13,6 +13,7 @@
   "dependencies": {
     "@fontsource/outfit": "^5.2.6",
     "@fontsource/roboto": "^5.2.6",
+    "crypto-browserify": "^3.12.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
