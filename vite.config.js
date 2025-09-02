@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   css: {
@@ -8,18 +9,10 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
   },
-  //base: '/enrilion-blog/',
-
-  // Add polyfill for `crypto` in Node.js
-  resolve: {
-    alias: {
-      crypto: 'crypto-browserify',  // Polyfill crypto for Node.js environment
-    },
-  },
-
-  // Optional: if you need environment-specific definitions
-  define: {
-    'process.env': {},
-  },
+  base: "/enrilion-blog/"
+//  server: {
+ //   allowedHosts: [
+  //    'ch-filed-increase-geneva.trycloudflare.com'
+   // ]
+  //}
 });
-
