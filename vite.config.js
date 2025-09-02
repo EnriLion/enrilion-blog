@@ -8,7 +8,7 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
   },
-  base: '/enrilion-blog/',
+  //base: '/enrilion-blog/',
 
   // Add polyfill for `crypto` in Node.js
   resolve: {
