@@ -3,36 +3,36 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger the workflow on push to the 'main' branch
+      - main  # Trigger the workflow when changes are pushed to the 'main' branch
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Use Ubuntu as the environment
+    runs-on: ubuntu-latest  # Specify the runner environment
 
     steps:
-      # Step 1: Checkout the code
+      # Step 1: Checkout the code from the repository
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js (Ensure the right version is used)
+      # Step 2: Set up Node.js environment (make sure to use the right version)
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Use the Node.js version that your project uses
+          node-version: '16'  # Or whichever Node.js version you're using
 
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the React app with Vite
+      # Step 4: Build the React app using Vite
       - name: Build React app
         run: npm run build
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.1.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages   # The branch to deploy to
           folder: dist        # Vite output folder
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token for authentication
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
