@@ -28,15 +28,23 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      # Step 5: Set up Git remote URL with the deployment token
-      - name: Set up Git remote URL
-        run: git remote set-url origin https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/${{ github.repository }}.git
+      # Step 5: Set up SSH key for deployment from the environment secret
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_TOKEN }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      # Step 6: Deploy to GitHub Pages
+      # Step 6: Set up Git remote URL with SSH
+      - name: Set up Git remote URL with SSH
+        run: git remote set-url origin git@github.com:${{ github.repository }}.git
+
+      # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages   # The branch to deploy to
           folder: dist        # Vite output folder
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Use the token secret for authentication
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Optional if you're using SSH
