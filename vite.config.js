@@ -9,7 +9,10 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
   },
-  base: "/enrilion-blog/"
+  base: "/enrilion-blog/",
+  build: {
+    outDir: 'dist',
+  },
 //  server: {
  //   allowedHosts: [
   //    'ch-filed-increase-geneva.trycloudflare.com'
