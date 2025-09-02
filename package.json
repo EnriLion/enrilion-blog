@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "https://github.com/EnriLion/enrilion-blog",
   "dependencies": {
     "@fontsource/outfit": "^5.2.6",
     "@fontsource/roboto": "^5.2.6",
