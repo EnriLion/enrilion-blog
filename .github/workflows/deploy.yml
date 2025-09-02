@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the React app
+      # Step 4: Build the React app using Vite
       - name: Build React app
         run: npm run build
 
@@ -33,7 +33,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.1.0
         with:
           branch: gh-pages   # Branch to deploy to
-          folder: build      # Folder to deploy (after running 'npm run build')
+          folder: dist        # Vite outputs the build to the 'dist' folder
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
