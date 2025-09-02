@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js environment (make sure to use the right version)
+      # Step 2: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
@@ -24,15 +24,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the React app using Vite
+      # Step 4: Build React app
       - name: Build React app
         run: npm run build
 
-      # Step 5: Deploy to GitHub Pages
+      # Step 5: Set up Git remote URL with the deployment token
+      - name: Set up Git remote URL
+        run: git remote set-url origin https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/${{ github.repository }}.git
+
+      # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages   # The branch to deploy to
           folder: dist        # Vite output folder
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Use the token secret for authentication
