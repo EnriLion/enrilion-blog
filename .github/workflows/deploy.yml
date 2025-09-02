@@ -36,3 +36,4 @@ jobs:
           folder: build      # Folder to deploy (after running 'npm run build')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
