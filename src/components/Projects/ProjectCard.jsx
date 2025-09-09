@@ -1,15 +1,24 @@
-import React, {isValidElement, useState} from "react";
+import React, { useState} from "react";
 
 import styles from "./ProjectCard.module.css"
 
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({project : {title, imageSrc, description, skills, demo , source} }) => {
-    const [isCardVisible, setIsCardVisible] = useState(false);
+    const [showCard, setShowCard] = useState(false);
     
-    const handleButton = () => {
-        setIsCardVisible(!isCardVisible);
+    const handleButton = (buttonType, event) => {
+        if ((buttonType === "demo" && demo === "not available") || 
+        (buttonType === "source" && source === "not available")) {
+            event.preventDefault(); 
+            setShowCard(true); 
+        }
+   };
+
+    const handleClose = () => {
+        setShowCard(false);
     }
+    
     return (<div className={styles.container}>
                     <img src={getImageUrl(imageSrc)} alt={`Image of ${title}`} className={styles.image}/>
                     <h3 className={styles.title}>{title}</h3>
@@ -21,9 +30,16 @@ export const ProjectCard = ({project : {title, imageSrc, description, skills, de
                         }
                     </ul>
                     <div className={styles.links}>
-                        <a href={demo} className={styles.link}>Demo</a>
-                        <a href={source} className={styles.link}>Source</a>
+                        <a href={demo} onClick={() => handleButton("demo", event)} className={styles.link}>Demo</a>
+                        <a href={source} onClick={() => handleButton("source", event)} className={styles.link}>Source</a>
                     </div>
+                    {showCard && (
+                        <div style={styles.card}>
+                            <h2>Under maintenance</h2>
+                            <p>I'm tweaking it </p>
+                            <button onClick={handleClose}>Close</button>
+                        </div>
+                    )}
             </div>
     );
 };
