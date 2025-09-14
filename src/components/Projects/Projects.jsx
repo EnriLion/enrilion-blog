@@ -12,7 +12,7 @@ export const Projects = () => {
         <div className={styles.projects}> {
             projects.map((project, id) => {
                 return (
-                    <ProjectCard key={id} project={project}/>
+                    <ProjectCard key={id} project={project}/> 
                 )})}
         </div> 
     </section>
