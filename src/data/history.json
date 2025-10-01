@@ -1,9 +1,17 @@
 [
     {
+    "role": "Java Developer",
+    "organization": "Capgemini",
+    "startDate": "Sep, 2025",
+    "endDate": "Present",
+    "experiences": ["Developing applications", "Rendering cache by 12%"],
+    "imageSrc": "history/capgemini.jpg"
+    },
+    {
     "role": "Software Engineer",
     "organization": "TCS",
     "startDate": "Oct, 2024",
-    "endDate": "Present",
+    "endDate": "Sep, 2025",
     "experiences": ["Worked on microservices", "Increased performance 42%"],
     "imageSrc": "history/tcs.jpg"
     },
@@ -15,12 +23,4 @@
     "experiences": ["Developed microservices", "Woked on migration"],
     "imageSrc": "history/tcs.jpg"
     },
-    {
-    "role": "Microsoft Developer Intern",
-    "organization": "GYA",
-    "startDate": "Oct, 2023",
-    "endDate": "Jun, 2024",
-    "experiences": ["Worked on making an app", "Helped to create flows"],
-    "imageSrc": "history/gya.jpg"
-    }
 ]
